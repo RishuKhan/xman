@@ -270,7 +270,7 @@ def logo():
                                              \033[1;91mhttps://www.facebook.com/Rishu.X.420
 ╚══════════════════════════════•ೋೋ•═════════════════════════════╝"""   
                                          
-def __Cek___():
+def__Cek___():
     global token
     try:
         token = open('login.txt', 'r').read()
