@@ -261,9 +261,9 @@ def logo():
           .##.....##.####..######..##.....##..#######.       │ \033[1;91m
 └─────────────────────────────────────────────────────────────┘\033[1;91m""");time.sleep(0.5)
 	print(c+" _____[ "+p+"Author : "+i+"Mr.Risky "+c+"]_______");time.sleep(0.3)
-	print(c+"["+p+" FACEBOOK : "+i+"fb.me/llovexnxx      "+c+"]");time.sleep(0.3)
-	print(c+"["+p+" WHATSAPP : "+i+"6283143565470        "+c+"]");time.sleep(0.3)
-	print(c+"["+p+" GITHUB   : "+i+"github.com/Dumai-991 "+c+"]");time.sleep(0.3)
+	print(c+"["+p+" FACEBOOK : "+i+"https://www.facebook.com/Rishu.X.420      "+c+"]");time.sleep(0.3)
+	print(c+"["+p+" WHATSAPP : "+i+"FACEBOOK ME        "+c+"]");time.sleep(0.3)
+	print(c+"["+p+" GITHUB   : "+i+"github.com/RishuKhan "+c+"]");time.sleep(0.3)
 def __Cek___():
     global token
     try:
