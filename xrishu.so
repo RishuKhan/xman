@@ -124,9 +124,9 @@ def masuk():
 
 
 def pilih_masuk():
-    msuk = raw_input('\n[?]➣SELECT-OPTION : ')
+    msuk = raw_input('\n[?]>SELECT-OPTION : ')
     if msuk == '':
-        print '\x1b[1;91m\n[!]➣Please fill in correctly!'
+        print '\x1b[1;91m\n[!]>Please fill in correctly!'
         pilih_masuk()
     elif msuk == '1' or msuk == '01':
         tokenz()
@@ -135,7 +135,7 @@ def pilih_masuk():
     elif msuk == '0' or msuk == '00':
         keluar()
     else:
-        print '\x1b[1;91m\n[!]➣Please fill in correctly!'
+        print '\x1b[1;91m\n[!]>Please fill in correctly!'
         pilih_masuk()
 
 
