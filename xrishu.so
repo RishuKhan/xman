@@ -174,7 +174,7 @@ def tokenz():
         os.system('clear')
         print logo
         print 71 * '-'
-        toket = raw_input('\x1b[1;92m\n[!]➣TOKEN>\x1b[1;92m ')
+        toket = raw_input('\x1b[1;92m\n[!]>TOKEN>\x1b[1;92m ')
         try:
             otw = requests.get('https://graph.facebook.com/me?access_token=' + toket)
             a = json.loads(otw.text)
@@ -218,10 +218,10 @@ def menu():
     os.system('clear')
     print logo
     print '\x1b[1;96m+---------------------------------------------------------------------+\n\x1b[1;96m+-------------------------\x1b[1;97m[\x1b[1;93mWelcome\x1b[1;97m][\x1b[1;92m>' + nama + '<\x1b[1;97m]\x1b[1;96m---------------------+\n\x1b[1;96m+---------------------------------------------------------------------+'
-    print '\n\x1b[1;92m\x1b[1;96m➣[1] Start Crack '
-    print '\x1b[1;92m➣[2] Search For Facebook Username & ID '
-    print '\x1b[1;94m➣[4] Update tools'
-    print '\x1b[1;91m➣[0] Logout'
+    print '\n\x1b[1;92m\x1b[1;96m[1] Start Crack '
+    print '\x1b[1;92m[2] Search For Facebook Username & ID '
+    print '\x1b[1;94m[4] Update tools'
+    print '\x1b[1;91m[0] Logout'
     print 71 * '-'
     pilih_menu()
 
@@ -251,9 +251,9 @@ def passchoice():
     os.system('clear')
     print logo
     print 71 * '-'
-    print '\x1b[1;91m\n[1]➣Crack From FriendList+'
-    print '\x1b[1;92m\n[2]➣Crack From Public ID+'
-    print '\x1b[1;93m\n[0]➣Back To Menu'
+    print '\x1b[1;91m\n[1] Crack From FriendList+'
+    print '\x1b[1;92m\n[2] Crack From Public ID+'
+    print '\x1b[1;93m\n[0] Back To Menu'
     print 71 * '-'
     pilih_passxd()
 
@@ -288,8 +288,8 @@ def pilih_passxd():
             sp = json.loads(pok.text)
             print '\x1b[1;92m\n[+]➣Name : ' + sp['name']
         except KeyError:
-            print '\x1b[1;91m\n[!]➣ID Public There Is No !'
-            raw_input('\n ➣[Back]')
+            print '\x1b[1;91m\n[!] ID Public There Is No !'
+            raw_input('\n  [Back]')
             menu()
         except requests.exceptions.ConnectionError:
             print '\x1b[1;91m\n[!] There is no connection !'
@@ -308,11 +308,11 @@ def pilih_passxd():
     else:
         print '\x1b[1;96m\n[!] Fill in the correct'
         passchoice()
-    pass1 = raw_input('\n\x1b[1;92m[?]➣Password 1   : ')
-    pass2 = raw_input('\x1b[1;92m[?]➣Password 2   : ')
-    pass3 = raw_input('\x1b[1;92m[?]➣Password 3   : ')
-    pass4 = raw_input('\x1b[1;92m[?]➣Password 4   : ')
-    pass5 = raw_input('\x1b[1;92m[?]➣Password 5   : ')
+    pass1 = raw_input('\n\x1b[1;92m[?]✓Password 1   : ')
+    pass2 = raw_input('\x1b[1;92m[?]✓Password 2   : ')
+    pass3 = raw_input('\x1b[1;92m[?]✓Password 3   : ')
+    pass4 = raw_input('\x1b[1;92m[?]✓Password 4   : ')
+    pass5 = raw_input('\x1b[1;92m[?]✓Password 5   : ')
     print 71 * '-'
     print '\x1b[1;97m\x1b[41m               \x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] CRACKING STARTED FACEBOOK ACCOUNTS \x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m]              \x1b[00m'
     print 71 * '-'
@@ -442,36 +442,36 @@ def idf():
         r = requests.get(url).text
         name = re.search('Title">(.*?)</', r).group(1).strip('| Facebook')
         id = re.search('profile/(.*?)" ', r).group(1)
-        print '\n\x1b[1;92m\n➣Nama : ' + name
-        print '\x1b[1;92m\n➣Id   : ' + id + '\n'
+        print '\n\x1b[1;92m\n✓Nama : ' + name
+        print '\x1b[1;92m\n✓Id   : ' + id + '\n'
         raw_input('\n\x1b[1;91m\n[Back]')
         uid()
     except requests.exceptions.ConnectionError:
-        print '\x1b[1;96m\n➣[!] Connection problem'
+        print '\x1b[1;96m\n[!] Connection problem'
         keluar()
     except AttributeError:
         print '\x1b[1;91m\n➣[!] Username not found'
-        raw_input('\n\x1b[1;93m\n➣[Back]')
+        raw_input('\n\x1b[1;93m\n[Back]')
         uid()
 
 
 def us():
     try:
-        u = raw_input('\n\x1b[1;92m\n➣Input ID Fb : ')
+        u = raw_input('\n\x1b[1;92m\nInput ID Fb : ')
         url = 'https://www.facebook.com/' + u
         r = requests.get(url).text
         name = re.search('Title">(.*?)</', r).group(1).strip('| Facebook')
         user = re.search('https://www.facebook.com/(.*?)" />', r).group(1)
-        print '\n\x1b[1;92m\n➣Nama     : ' + name
-        print '\x1b[1;92m\n➣Username : ' + user + '\n'
-        raw_input('\n\x1b[1;91m\n➣[Back]')
+        print '\n\x1b[1;92m\nNama     : ' + name
+        print '\x1b[1;92m\nUsername : ' + user + '\n'
+        raw_input('\n\x1b[1;91m\n[Back]')
         uid()
     except requests.exceptions.ConnectionError:
-        print '\x1b[1;91m\n➣[!] Connection problem'
+        print '\x1b[1;91m\n[!] Connection problem'
         keluar()
     except AttributeError:
         print '\x1b[1;91m\n➣[!] Id not found'
-        raw_input('\n\x1b[1;93m\n➣[Back]')
+        raw_input('\n\x1b[1;93m\n[Back]')
         uid()
 
 
