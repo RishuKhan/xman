@@ -282,11 +282,11 @@ def pilih_passxd():
         os.system('clear')
         print logo
         print 71 * '-'
-        idt = raw_input('\x1b[1;93m\n[+]➣ID Public : ')
+        idt = raw_input('\x1b[1;93m\n[+]✓ID Public : ')
         try:
             pok = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + toket)
             sp = json.loads(pok.text)
-            print '\x1b[1;92m\n[+]➣Name : ' + sp['name']
+            print '\x1b[1;92m\n[+]✓Name : ' + sp['name']
         except KeyError:
             print '\x1b[1;91m\n[!] ID Public There Is No !'
             raw_input('\n  [Back]')
