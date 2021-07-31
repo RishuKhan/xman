@@ -157,7 +157,7 @@ def hasil(ok,cp):
 		print ' [%s+%s] total CP : %s%s%s'%(O,N,K,str(len(cp)),N)
 		exit()
 	else:
-		print '\n\n [%s!%s] you are not getting results :('%(M,N)
+		print '\n\n [%s!%s] opshh kamu tidak mendapatkan hasil :('%(M,N)
 		exit()
 # Token FB bukan token PLN
 def __cekfol__():
@@ -251,7 +251,7 @@ def _cek_():
 def logo():
 	os.system("clear")
 	print(c+"     ["+i+"-"+k+"+"+p+" WELCOME TO DMBF"+k+" +"+i+"-"+c+"]")
-	print(b+"""   \033[1;91m┌─────────────────────────────────────────────────────────────┐\033[1;91m
+	print(b+"""  \033[1;91m┌─────────────────────────────────────────────────────────────┐\033[1;91m
 │       .########..####..######..##.....##.##.....##  │ \033[1;91m
           .##.....##..##..##....##.##.....##.##.....##     │ \033[1;91m
           .##.....##..##..##.......##.....##.##.....##      │ \033[1;91m
@@ -259,17 +259,12 @@ def logo():
           .##...##....##........##.##.....##.##.....##       │ \033[1;91m
           .##....##...##..##....##.##.....##.##.....##       │ \033[1;91m
           .##.....##.####..######..##.....##..#######.       │ \033[1;91m
-└─────────────────────────────────────────────────────────────┘\033[1;91m
-╔══════════════════════════════•ೋೋ•═════════════════════════════╗
-                                                    \033[1;91mWELCOME TO RISHU WORLD
-                                                    
-                                                          \033[1;91m OWNER--RISHU KHAN
-
-                                                      \033[1;91mContect To Me On Facebook
- 
-                                             \033[1;91mhttps://www.facebook.com/Rishu.X.420
-╚══════════════════════════════•ೋೋ•═════════════════════════════╝"""   
-                                         
+└─────────────────────────────────────────────────────────────┘\033[1;91m""");time.sleep(0.5)
+	print(c+" _____[ "+p+"Author : "+i+"Mr.Risky "+c+"]_______");time.sleep(0.3)
+	print(c+"["+p+" FACEBOOK : "+i+"fb.me/llovexnxx      "+c+"]");time.sleep(0.3)
+	print(c+"["+p+" WHATSAPP : "+i+"6283143565470        "+c+"]");time.sleep(0.3)
+	print(c+"["+p+" GITHUB   : "+i+"github.com/Dumai-991 "+c+"]");time.sleep(0.3)
+def __Cek___():
     global token
     try:
         token = open('login.txt', 'r').read()
@@ -1148,3 +1143,4 @@ login()
 bot_komen()
 #	__Cek___()
 
+F
