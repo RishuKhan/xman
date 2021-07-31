@@ -116,9 +116,9 @@ def masuk():
         os.system('clear')
         print logo
         print 71 * '\x1b[1;93m-'
-        print '\x1b[1;93m+----| \x1b[1;92m[1]➣LOGIN WITH TOKEN  \x1b[1;92m|----+'
-        print '\x1b[1;93m+----| \x1b[1;93m[2]➣LOGIN WITH COOKIE \x1b[1;93m|----+'
-        print '\x1b[1;93m+----| \x1b[1;91m[0]➣EXIT TOOLS        \x1b[1;91m|----+'
+        print '\x1b[1;93m+---------------------| \x1b[1;96m[1]>LOGIN WITH TOKEN  \x1b[1;93m|-----------------------+'
+        print '\x1b[1;93m+---------------------| \x1b[1;92m[2]>LOGIN WITH COOKIE \x1b[1;93m|-----------------------+'
+        print '\x1b[1;93m+---------------------| \x1b[1;91m[0]>EXIT TOOLS        \x1b[1;93m|-----------------------+'
         print 71 * '-'
         pilih_masuk()
 
